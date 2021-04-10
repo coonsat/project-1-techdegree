@@ -40,25 +40,25 @@ const quotes =
     {
         "quote" : "If you hear a voice within you say 'you cannot paint,' then by all means paint and that voice will be silenced",
         "source" : "Vincent Van Gogh",
-        "citation" : null,
+        "citation" : "The Letters of Van Gogh",
         "year": null
     },
     {
         "quote" : "Everyone thinks of changing the world, but no one thinks of changing himself",
         "source" : "Lev Tolstoy",
         "citation" : null,
-        "year": null
+        "year": 2015
     },
     {
         "quote" : "Strive not to be a success, but rather to be of value",
         "source" : "Albert Einstein",
-        "citation" : "another source",
+        "citation" : "Memoirs",
         "year": 2017
     },
     {
         "quote" : "Keep your face always towards the sunshine - and shadows will fall behind you",
         "source" : "Walt Whitman",
-        "citation" : "A source",
+        "citation" : "Great Quotes of Our Modern Times",
         "year": 2016
     }
 ];
