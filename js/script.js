@@ -68,15 +68,38 @@ const quotes =
 /***
  * `getRandomQuote` function
 ***/
-
+/***
+ * Explanation:
+ * A random quote is retrieved using an index returned from 
+ * the Math.random function and multiplying it by the length
+ * of the quote array to. 
+ * E.g. 
+ * random = 0.92694746
+ * length = 8
+ * random * length = 7.411751294144449
+ * Math.floor(random * length) = 7
+***/
 function getRandomQuote() {
-  return quotes[Math.floor(Math.random() * quotes.length)];
+    return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
 /***
  * `printQuote` function
 ***/
 
+/***
+ * Explanation:
+ * quote returned from getRandomQuote
+ * quotebox retrieved from DOM
+ * quotebox contents cleared of previous quote
+ * use bactics (not sure how to spell it) the quote
+ * structure from the template is replicated without
+ * having to create an individual DOM element via
+ * document.createElement('p')
+ * One line if check examines if citation or year is
+ * not null. The DOM element will still be rendered if
+ * it is null but will not contain any contents. 
+***/
 function printQuote() {
   const quote = getRandomQuote();
   let quoteBox = document.getElementById('quote-box');
