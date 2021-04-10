@@ -52,14 +52,14 @@ const quotes =
     {
         "quote" : "Strive not to be a success, but rather to be of value",
         "source" : "Albert Einstein",
-        "citation" : null,
-        "year": null
+        "citation" : "another source",
+        "year": 2017
     },
     {
         "quote" : "Keep your face always towards the sunshine - and shadows will fall behind you",
         "source" : "Walt Whitman",
-        "citation" : null,
-        "year": null
+        "citation" : "A source",
+        "year": 2016
     }
 ];
 
@@ -83,12 +83,8 @@ function printQuote() {
   quoteBox.innerHTML = "";
   quoteBox.innerHTML = 
     `<p class="quote">${quote.quote}</p>
-    <p class="source">${quote.source}
-      <span class=${quote.citation !== null ? "citation" : ''}>${quote.citation !== null ? quote.citation : ''}</span>
-      <span class=${quote.year !== null ? "year" : ''}>${quote.year !== null ? quote.year : ''}</span>
-    </p>`
+    <p class="source">${quote.source}${quote.citation !== null ? `<span class=citation>${quote.citation}</span>` : ''}${quote.year !== null ? `<span class=year>${quote.year}</span>` : ''}</p>`
 }
-
 
 /***
  * click event listener for the print quote button
